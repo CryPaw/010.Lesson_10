@@ -5,4 +5,4 @@ let start = prompt();
       result.sort((a, b) => a - b);
     }
     result.splice(1, 3);
-    alert('[ ' + result + ' ]');
+    document.write('[ ' + result + ' ]');
