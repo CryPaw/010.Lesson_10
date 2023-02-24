@@ -1,8 +1,7 @@
-let start = prompt();
-    let result = [];
-    while (start >= 0) {
-      result.push(start--);
-      result.sort((a, b) => a - b);
-    }
-    result.splice(1, 3);
-    document.write('[ ' + result + ' ]');
+let array = prompt('Введите массив через пробел :');
+array = array.trim().split(/\s+/);
+array.sort((a, b) => a - b);
+array.splice(1, 3);
+
+document.write('Ваш массив :\n' + array);
+
